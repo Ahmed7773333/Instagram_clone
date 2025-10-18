@@ -27,10 +27,7 @@ class Messages extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(
-              'jacob_w',
-              style: AppStyles.smallStyle,
-            ),
+            Text('jacob_w', style: AppStyles.smallStyle),
             Icon(
               Icons.keyboard_arrow_down_sharp,
               color: Colors.black,
@@ -39,11 +36,7 @@ class Messages extends StatelessWidget {
           ],
         ),
         actions: [
-          Icon(
-            Icons.add,
-            color: Colors.black,
-            size: 29.r,
-          ),
+          Icon(Icons.add, color: Colors.black, size: 29.r),
           SizedBox(width: 12.w),
         ],
       ),
@@ -63,9 +56,7 @@ class Messages extends StatelessWidget {
                       decoration: const ShapeDecoration(
                         shape: OvalBorder(),
                         image: DecorationImage(
-                          image: AssetImage(
-                            AppImages.temp,
-                          ),
+                          image: AssetImage(AppImages.temp),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -82,7 +73,9 @@ class Messages extends StatelessWidget {
                     subtitle: Text(
                       'Have a nice day, bro!',
                       style: TextStyle(
-                        color: Colors.black.withOpacity(0.4000000059604645),
+                        color: Colors.black.withValues(
+                          alpha: 0.4000000059604645,
+                        ),
                         fontSize: 13.sp,
                         fontWeight: FontWeight.w400,
                         letterSpacing: -0.10,

@@ -9,9 +9,7 @@ class Story extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: 45.h,
-        ),
+        SizedBox(height: 45.h),
         SizedBox(
           width: 375.w,
           height: 667.h,
@@ -23,10 +21,7 @@ class Story extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(context);
                 },
-                child: Image.asset(
-                  AppImages.theman,
-                  fit: BoxFit.cover,
-                ),
+                child: Image.asset(AppImages.theman, fit: BoxFit.cover),
               ),
               Positioned(
                 top: 8.h,
@@ -35,9 +30,10 @@ class Story extends StatelessWidget {
                   width: 359.w,
                   height: 2.h,
                   decoration: ShapeDecoration(
-                    color: Colors.white.withOpacity(0.36000001430511475),
+                    color: Colors.white.withValues(alpha: 0.36000001430511475),
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(1.r)),
+                      borderRadius: BorderRadius.circular(1.r),
+                    ),
                   ),
                 ),
               ),
@@ -50,9 +46,7 @@ class Story extends StatelessWidget {
                   decoration: const ShapeDecoration(
                     shape: OvalBorder(),
                     image: DecorationImage(
-                      image: AssetImage(
-                        AppImages.temp,
-                      ),
+                      image: AssetImage(AppImages.temp),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -78,19 +72,13 @@ class Story extends StatelessWidget {
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Icon(
-                    Icons.close,
-                    color: Colors.white,
-                    size: 24.r,
-                  ),
+                  child: Icon(Icons.close, color: Colors.white, size: 24.r),
                 ),
               ),
             ],
           ),
         ),
-        SizedBox(
-          height: 15.5.h,
-        ),
+        SizedBox(height: 15.5.h),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -109,7 +97,9 @@ class Story extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                           side: BorderSide(
                             width: 1,
-                            color: Colors.white.withOpacity(0.4000000059604645),
+                            color: Colors.white.withValues(
+                              alpha: 0.4000000059604645,
+                            ),
                           ),
                           borderRadius: BorderRadius.circular(21.50.r),
                         ),
@@ -137,14 +127,8 @@ class Story extends StatelessWidget {
                 ],
               ),
             ),
-            Image.asset(
-              AppImages.messanger,
-              color: Colors.white,
-            ),
-            const Icon(
-              Icons.more_horiz,
-              color: Colors.white,
-            ),
+            Image.asset(AppImages.messanger, color: Colors.white),
+            const Icon(Icons.more_horiz, color: Colors.white),
           ],
         ),
       ],

@@ -27,9 +27,7 @@ class FollowingTab extends StatelessWidget {
                     decoration: const ShapeDecoration(
                       shape: OvalBorder(),
                       image: DecorationImage(
-                        image: AssetImage(
-                          AppImages.temp,
-                        ),
+                        image: AssetImage(AppImages.temp),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -58,9 +56,7 @@ class FollowingTab extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
-                        width: 4.w,
-                      ),
+                      SizedBox(width: 4.w),
                       Container(
                         width: 44.w,
                         height: 44.h,
@@ -71,9 +67,7 @@ class FollowingTab extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
-                        width: 4.w,
-                      ),
+                      SizedBox(width: 4.w),
                       Container(
                         width: 44.w,
                         height: 44.h,
@@ -107,9 +101,7 @@ class FollowingTab extends StatelessWidget {
                         decoration: const ShapeDecoration(
                           shape: OvalBorder(),
                           image: DecorationImage(
-                            image: AssetImage(
-                              AppImages.temp,
-                            ),
+                            image: AssetImage(AppImages.temp),
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -175,9 +167,7 @@ class FollowingTab extends StatelessWidget {
                                 decoration: const ShapeDecoration(
                                   shape: OvalBorder(),
                                   image: DecorationImage(
-                                    image: AssetImage(
-                                      AppImages.temp,
-                                    ),
+                                    image: AssetImage(AppImages.temp),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -209,13 +199,11 @@ class FollowingTab extends StatelessWidget {
                                 color: Colors.black,
                                 size: 12.r,
                               ),
-                              SizedBox(
-                                width: 4.w,
-                              ),
+                              SizedBox(width: 4.w),
                               Text(
                                 'Reply',
                                 style: TextStyle(
-                                  color: Colors.black.withOpacity(0.4),
+                                  color: Colors.black.withValues(alpha: 0.4),
                                   fontSize: 11.sp,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -265,9 +253,7 @@ class FollowingTab extends StatelessWidget {
                                 decoration: const ShapeDecoration(
                                   shape: OvalBorder(),
                                   image: DecorationImage(
-                                    image: AssetImage(
-                                      AppImages.temp,
-                                    ),
+                                    image: AssetImage(AppImages.temp),
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -299,13 +285,11 @@ class FollowingTab extends StatelessWidget {
                                 color: Colors.black,
                                 size: 12.r,
                               ),
-                              SizedBox(
-                                width: 4.w,
-                              ),
+                              SizedBox(width: 4.w),
                               Text(
                                 'Reply',
                                 style: TextStyle(
-                                  color: Colors.black.withOpacity(0.4),
+                                  color: Colors.black.withValues(alpha: 0.4),
                                   fontSize: 11.sp,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -320,11 +304,7 @@ class FollowingTab extends StatelessWidget {
                 Positioned(
                   top: 137.h,
                   child: Column(
-                    children: [
-                      oneDouble(),
-                      oneDouble(),
-                      oneDouble(),
-                    ],
+                    children: [oneDouble(), oneDouble(), oneDouble()],
                   ),
                 ),
               ],
